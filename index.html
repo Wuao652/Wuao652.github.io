@@ -69,7 +69,55 @@
 
             <!-- List of publications -->
             <!-- Highlight the representative papers -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- each table row represents a single paper -->
+              <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+                    <source src="images/nuvo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/nuvo.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function nuvo_start() {
+                      document.getElementById('nuvo_image').style.opacity = "1";
+                    }
+          
+                    function nuvo_stop() {
+                      document.getElementById('nuvo_image').style.opacity = "0";
+                    }
+                    nuvo_stop()
+                  </script>
+                </td>
+                <!-- paper info -->
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <span class="papertitle">Can Large Language Models Reason About Goal-Oriented Tasks?</span>
+                  <br>
+                  Filippos Bellos,
+                  Yayuan Li,
+                  <strong>Wuao Liu</strong>,
+                  <a href="https://web.eecs.umich.edu/~jjcorso/">Jason J. Corso</a>
+                  <br>
+                  <em>ACL Workshop</em>, 2024
+                  <br>
+                  <a href="https://aclanthology.org/2024.scalellm-1.3/">project page</a>
+                  /
+                  <a href="https://aclanthology.org/2024.scalellm-1.3.mp4">video</a>
+                  /
+                  <a href="https://aclanthology.org/2024.scalellm-1.3.pdf">pdf</a>
+                  <p></p>  <!-- magic line -->
+                  <p>
+                    We study how well LLMs can complete a sequence of steps to achieve a certain goal, such as making a sandwich or repairing a bicycle tire.
+                  </p>
+                </td>
+              </tr>
 
+
+            </tbody></table>
+
+            <!-- Add-on -->
             <table style="width:100%;max-width:400px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <!-- add Map Widget using ClustrMaps -->
               <!-- stolen from: https://williamlwj.github.io/About//posts/polish-pages-clustrmaps/ -->
@@ -92,7 +140,7 @@
                 <td>
                   <!-- <br> -->
                   <p style="text-align:right;font-size:small;">
-                    Thanks to <a href="https://jonbarron.info/">Jon Barron</a> for providing this amazing template.<br>Thanks to my friend <a ref="https://xiaofenglin7.github.io/">Xiaofeng Lin</a> for his help building this webpage.
+                    Thanks to <a href="https://jonbarron.info/">Jon Barron</a> for providing this amazing template.<br>Thanks to my friend <a href="https://xiaofenglin7.github.io/">Xiaofeng Lin</a> for his help building this webpage.
                   </p>
                 </td>
               </tr>
