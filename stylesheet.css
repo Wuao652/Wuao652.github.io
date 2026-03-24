@@ -139,3 +139,38 @@ span.highlight {
   padding-top: 48px;     /* 设置高度为宽度的 30% */
   position: relative;   /* 确保 div 的相对定位 */
 }
+
+.news-section {
+  margin-top: 10px;
+}
+
+.news-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.news-date {
+  display: inline-block;
+  min-width: 70px;
+  margin-right: 8px;
+  color: #1f4f82;
+  font-weight: 700;
+}
+
+.news-content {
+  line-height: 1.6;
+}
+
+.news-archive {
+  margin-top: 10px;
+}
+
+.news-archive summary {
+  cursor: pointer;
+  color: #1f4f82;
+  font-weight: 400;
+}
+
+.news-list-archive {
+  margin-top: 8px;
+}
