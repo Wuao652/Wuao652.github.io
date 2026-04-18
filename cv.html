@@ -8,7 +8,17 @@ layout: null
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>{{ site.title }}</title>
+  <meta name="description" content="Curriculum Vitae — {{ site.name }}, {{ site.position }}.">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="canonical" href="{{ '/cv.html' | absolute_url }}">
+  <title>CV — {{ site.name }}</title>
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="CV — {{ site.name }}">
+  <meta property="og:url" content="{{ '/cv.html' | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/WuaoLiu_Pacific_Grove_Rocky_View.jpg' | absolute_url }}">
+
+  {% if site.google_analytics %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
@@ -22,6 +32,7 @@ layout: null
 
     gtag('config', '{{ site.google_analytics }}');
   </script>
+  {% endif %}
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link href="./css/fontawesome.all.min.css" rel="stylesheet">
