@@ -1,0 +1,44 @@
+- id: iNatSoundsMAE
+  title: "Masked Autoencoders with Limited Data: Does It Work? A Fine-Grained Bioacoustics Case Study"
+  venue: "CVPR Workshop, 2026"
+  description: "A systematic study of MAE pretraining for species classification on iNatSounds, analyzing the impacts of pretraining data scale, domain specificity, data curation, and transfer strategies."
+  project_page: "https://github.com/cvl-umass/nat-sound2loc-benchmark"
+  github: cvl-umass/nat-sound2loc-code
+  arxiv: "2505.18726"
+  image: inatsounds_mae.png
+  first_authors:
+    - wuaoliu
+  authors:
+    - mustafachasmai
+    - subhransumaji
+    - grantvanhorn
+
+- id: AudioGeolocation
+  title: "Audio Geolocation: A Natural Sounds Benchmark"
+  venue: "Under Review, 2026"
+  description: "Using a vision-inspired approach, we tackle the novel challenge of predicting the geographic location of audio recordings by leveraging species sounds and multimodal retrieval techniques."
+  project_page: "https://github.com/cvl-umass/nat-sound2loc-benchmark"
+  github: cvl-umass/nat-sound2loc-code
+  arxiv: "2505.18726"
+  image: audio_geolocation.png
+  first_authors:
+    - mustafachasmai
+  authors:
+    - wuaoliu
+    - subhransumaji
+    - grantvanhorn
+
+- id: LLMsGoalOriented
+  title: "Can Large Language Models Reason About Goal-Oriented Tasks?"
+  venue: "ACL Workshop, 2024"
+  description: "We study how well LLMs can complete a sequence of steps to achieve a certain goal, such as making a sandwich or repairing a bicycle tire."
+  project_page: "https://aclanthology.org/2024.scalellm-1.3/"
+  open_access: "https://aclanthology.org/2024.scalellm-1.3.pdf"
+  video: "https://aclanthology.org/2024.scalellm-1.3.mp4"
+  image: LLMs_for_goal_oriented_tasks.png
+  first_authors:
+    - filipposbellos
+  authors:
+    - yayuanli
+    - wuaoliu
+    - jasoncorso

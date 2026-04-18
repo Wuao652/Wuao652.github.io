@@ -1,0 +1,10 @@
+- role: "Research Scientist Intern"
+  company: "Honda Research Institute"
+  company_url: "https://usa.honda-ri.com/"
+  logo: "images/honda-edited.png"
+  dates: "May 2025 - Aug 2025"
+  mentors:
+    - name: "Nirav Savaliya"
+      url: "https://www.linkedin.com/in/astronirav/"
+    - name: "Goro Yeh"
+      url: "https://www.linkedin.com/in/goroyeh56/"
