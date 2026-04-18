@@ -6,7 +6,7 @@ function toggleNews(btn) {
         el.style.display = expanded ? 'none' : 'list-item';
     });
     btn.setAttribute('data-expanded', expanded ? 'false' : 'true');
-    btn.innerHTML = expanded ? '&#9660; Show more' : '&#9650; Show less';
+    btn.innerHTML = expanded ? '&#9660; Click to see old news' : '&#9650; Hide old news';
 }
 
 function filterPublications(mode) {

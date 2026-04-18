@@ -100,16 +100,23 @@ layout: null
 
       <h2 class="title is-3">News</h2>
       <div class="content">
+        {% assign active_news = site.data.news | where_exp: "item", "item.archived != true" %}
+        {% assign archived_news = site.data.news | where_exp: "item", "item.archived == true" %}
         <ul>
-          {% for news in site.data.news %}
-          <li {% if forloop.index > 5 %}class="news-extra" style="display:none;"{% endif %}>
+          {% for news in active_news %}
+          <li>
+{{ news.date }}: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </li>
+          {% endfor %}
+          {% for news in archived_news %}
+          <li class="news-extra" style="display:none;">
 {{ news.date }}: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
           </li>
           {% endfor %}
         </ul>
-        {% if site.data.news.size > 5 %}
+        {% if archived_news.size > 0 %}
         <a class="news-toggle" onclick="toggleNews(this)" style="cursor:pointer; font-weight:500;">
-          &#9660; Show more
+          &#9660; Click to see old news
         </a>
         {% endif %}
       </div>
