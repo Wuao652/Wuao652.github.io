@@ -8,15 +8,21 @@ title: Wuao Liu
 name: Wuao Liu
 position: CS PhD Student
 email: wuaoliu@umass.edu
-description: |-
+# Short plain-text summary used for <meta name="description"> and the
+# Atom feed subtitle. Keep under ~160 characters and free of markdown.
+description: "CS PhD student at UMass Amherst advised by Prof. Grant Van Horn. Computer vision and machine learning for AI4Science, focused on fine-grained species recognition."
+
+# Full hero bio rendered on the homepage via markdownify. Can include
+# markdown links and inline HTML (e.g. the callout span below).
+bio: |-
   I am a Computer Science Ph.D. student working in the Computer Vision Lab at [UMass Amherst](https://www.umass.edu/), advised by [Prof. Grant Van Horn](https://gvh.codes/). Previously, I received my M.S. and B.Eng. degrees in Robotics from [University of Michigan, Ann Arbor](https://robotics.umich.edu/) and [Zhejiang University](http://www.cse.zju.edu.cn/), respectively.
 
   My research leverages computer vision and machine learning for applications in AI4Science. I currently focus on visual and auditory recognition of fine-grained categories, such as wildlife species, to support biodiversity monitoring and conservation efforts.
 
-  **<span style="color:red">I'm actively looking for PhD internship positions during summer 2026. Please feel free to contact me!</span>**
+  **<span class="callout">I'm actively looking for PhD internship positions during summer 2026. Please feel free to contact me!</span>**
 
 baseurl: ""
-url: "https://wuao652.github.io/"
+url: "https://wuao652.github.io"
 
 # External profiles
 twitter_username: liu_wuao

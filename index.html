@@ -8,8 +8,27 @@ layout: null
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta name="description" content="{{ site.description | strip_html | truncate: 160 }}">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.name }}">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
   <title>{{ site.name }}</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ '/' | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/WuaoLiu_Pacific_Grove_Rocky_View.jpg' | absolute_url }}">
+  <meta property="og:image:alt" content="Wuao Liu">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.name }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ '/images/WuaoLiu_Pacific_Grove_Rocky_View.jpg' | absolute_url }}">
+  {% if site.twitter_username %}<meta name="twitter:creator" content="@{{ site.twitter_username }}">{% endif %}
+
+  {% if site.google_analytics %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
@@ -23,6 +42,7 @@ layout: null
 
     gtag('config', '{{ site.google_analytics }}');
   </script>
+  {% endif %}
 
   <link rel="icon" type="image/x-icon" href="{{ '/images/UMASS_Medium_PMS202_RGB.ico' | relative_url }}">
 
@@ -69,7 +89,7 @@ layout: null
             <b>{{ site.name }}</b> <span class="name-chinese">(刘武傲)</span>
           </h1>
           <div class="content has-text-justified">
-            {{ site.description | markdownify }}
+            {{ site.bio | markdownify }}
             <div class="profile-links">
               <span class="profile-links-sep">|</span>
               <a class="external-link" href="{{ '/data/WuaoLiu_ModernCV.pdf' | relative_url }}">CV</a>
@@ -79,6 +99,8 @@ layout: null
               <a class="external-link" href="https://github.com/{{ site.github_username }}">Github</a>
               <span class="profile-links-sep">|</span>
               <a class="external-link" href="{{ site.linkedin_url }}">LinkedIn</a>
+              <span class="profile-links-sep">|</span>
+              <a class="external-link" href="https://twitter.com/{{ site.twitter_username }}">X</a>
               <span class="profile-links-sep">|</span>
             </div>
 
