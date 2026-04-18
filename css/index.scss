@@ -41,6 +41,13 @@ section.section {
 .title {
     font-family: 'Google Sans';
     font-weight: 700;
+
+    .name-chinese {
+        font-size: 0.6em;
+        font-weight: 500;
+        color: #555;
+        margin-left: 0.25em;
+    }
 }
 
 .portrait {
@@ -75,9 +82,13 @@ section.section {
     }
 }
 
+#news .content ul {
+    padding-left: 2.5rem;
+}
+
 .experience-list {
     list-style: disc;
-    padding-left: 1.25rem;
+    padding-left: 2.5rem;
 }
 
 .experience-item {
@@ -130,6 +141,13 @@ section.section {
             text-decoration: none;
             &:hover { text-decoration: underline; }
         }
+    }
+}
+
+.clustrmaps-section {
+    .has-text-centered {
+        max-width: 360px;
+        margin: 0 auto;
     }
 }
 
