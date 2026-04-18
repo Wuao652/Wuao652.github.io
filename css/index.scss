@@ -1,0 +1,239 @@
+---
+---
+
+@import "base";
+
+body {
+    padding-top: 52px;
+}
+
+.hero .hero-body {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.hr {
+    margin: 0;
+}
+
+section.section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.site-navbar {
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+
+    .site-navbar-name {
+        font-weight: 700;
+        color: #222;
+    }
+
+    .navbar-item {
+        font-size: 0.95rem;
+        color: #444;
+
+        &:hover { color: #3273dc; }
+    }
+}
+
+.title {
+    font-family: 'Google Sans';
+    font-weight: 700;
+}
+
+.portrait {
+    border-radius: 2%;
+    overflow: hidden;
+
+    img { transform: scale(1.2); }
+}
+
+.footer .footer-links a {
+    font-size: 25px;
+    color: #000;
+}
+
+.profile-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+
+    a {
+        color: #3273dc;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover { text-decoration: underline; }
+    }
+
+    .profile-links-sep {
+        color: #aaa;
+    }
+}
+
+.experience-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+}
+
+.experience-item {
+    margin-bottom: 1rem;
+
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .experience-title-block {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+    }
+
+    .experience-logo {
+        height: 36px;
+        width: auto;
+        object-fit: contain;
+        border-radius: 4px;
+        flex-shrink: 0;
+    }
+
+    .experience-role {
+        font-weight: 700;
+    }
+
+    .experience-dates {
+        color: #555;
+        font-size: 0.92rem;
+        white-space: nowrap;
+    }
+
+    .experience-desc {
+        margin-top: 0.15rem;
+        color: #222;
+    }
+
+    .experience-mentors {
+        font-size: 0.92rem;
+        color: #555;
+
+        a {
+            color: #3273dc;
+            text-decoration: none;
+            &:hover { text-decoration: underline; }
+        }
+    }
+}
+
+.publication-filter-btns {
+    margin-left: 1rem;
+    vertical-align: middle;
+
+    .button {
+        font-size: 0.8rem;
+        margin-right: 0.25rem;
+    }
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background: #3273dc;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.2s;
+
+    &:hover { background: #2160c4; }
+}
+
+.publication-highlight {
+    background-color: #fffbe6;
+    border-left: 4px solid #f5c518;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem !important;
+}
+
+.publication-block {
+    .publication-title {
+        width: fit-content;
+        margin: 0 !important;
+        font-weight: 600;
+        font-size: 110% !important;
+
+        a { color: #000 }
+    }
+
+    .publication-venue {
+        color: #555;
+        width: fit-content;
+        margin-top: 0;
+    }
+
+    .publication-venue-emph {
+        font-style: normal;
+        font-size: 80%;
+        font-weight: 500;
+        color: firebrick;
+        padding-left: 0.25em;
+    }
+
+    .publication-awards {
+        color: firebrick;
+        width: fit-content;
+        font-weight: bolder;
+    }
+
+    .publication-authors {
+        .author-me {
+            color: #000;
+            font-weight: 600;
+        }
+
+        a {
+            color: #000 !important;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .publication-image {
+        border-radius: 4px;
+        width: 100%;
+        overflow: hidden;
+
+        img, video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .publication-description {
+        color: #333;
+        margin: 0.5em 0;
+    }
+
+    .publication-links {
+        margin: 0 !important;
+        margin-top: 0.5em !important;
+    }
+}
