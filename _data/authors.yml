@@ -1,0 +1,34 @@
+wuaoliu:
+  first_name: Wuao
+  last_name: Liu
+  website: https://wuao652.github.io/
+  is_me: true
+
+grantvanhorn:
+  first_name: Grant
+  last_name: Van Horn
+  website: https://gvh.codes/
+
+subhransumaji:
+  first_name: Subhransu
+  last_name: Maji
+  website: https://people.cs.umass.edu/~smaji/
+
+mustafachasmai:
+  first_name: Mustafa
+  last_name: Chasmai
+  website: https://mustafa1728.github.io/
+
+jasoncorso:
+  first_name: Jason
+  middle_name: J.
+  last_name: Corso
+  website: https://web.eecs.umich.edu/~jjcorso/
+
+filipposbellos:
+  first_name: Filippos
+  last_name: Bellos
+
+yayuanli:
+  first_name: Yayuan
+  last_name: Li

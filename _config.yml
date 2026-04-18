@@ -11,21 +11,24 @@
 # Site identity
 title: Wuao Liu
 name: Wuao Liu
-position:
+position: CS PhD Student
 email: wuaoliu@umass.edu
 description: |-
-  Staging description. The real bio migrates in PR #3 from the
-  pre-migration index.html.
+  I am a Computer Science Ph.D. student working in the Computer Vision Lab at [UMass Amherst](https://www.umass.edu/), advised by [Prof. Grant Van Horn](https://gvh.codes/). Previously, I received my M.S. and B.Eng. degrees in Robotics from [University of Michigan, Ann Arbor](https://robotics.umich.edu/) and [Zhejiang University](http://www.cse.zju.edu.cn/), respectively.
+
+  My research leverages computer vision and machine learning for applications in AI4Science. I currently focus on visual and auditory recognition of fine-grained categories, such as wildlife species, to support biodiversity monitoring and conservation efforts.
+
+  **<span style="color:red">I'm actively looking for PhD internship positions during summer 2026. Please feel free to contact me!</span>**
 
 baseurl: ""
 url: "https://wuao652.github.io/"
 
-# External profiles (fill in during PR #5)
-twitter_username:
-linkedin_url:
+# External profiles
+twitter_username: liu_wuao
+linkedin_url: "https://www.linkedin.com/in/wuaoliu/"
 github_username: Wuao652
-google_scholar:
-# google_analytics: G-XXXXXXXXXX
+google_scholar: "4sXSduQAAAAJ"
+# google_analytics: G-XXXXXXXXXX  # fill in during PR #5
 
 # Build settings
 theme: minima

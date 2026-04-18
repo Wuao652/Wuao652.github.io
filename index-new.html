@@ -24,7 +24,7 @@ layout: null
     gtag('config', '{{ site.google_analytics }}');
   </script>
 
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="{{ '/images/UMASS_Medium_PMS202_RGB.ico' | relative_url }}">
 
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
@@ -60,7 +60,7 @@ layout: null
 
         <div class="column is-4">
           <div class="portrait">
-            <img src="{{ '/images/profile_img.jpg' | relative_url }}" />
+            <img src="{{ '/images/WuaoLiu_Pacific_Grove_Rocky_View.jpg' | relative_url }}" alt="Wuao Liu" />
           </div>
         </div>
 
@@ -72,7 +72,7 @@ layout: null
             {{ site.description | markdownify }}
             <div class="profile-links">
               <span class="profile-links-sep">|</span>
-              <a class="external-link" href="assets/CV.pdf">CV</a>
+              <a class="external-link" href="{{ '/data/WuaoLiu_ModernCV.pdf' | relative_url }}">CV</a>
               <span class="profile-links-sep">|</span>
               <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}">Google Scholar</a>
               <span class="profile-links-sep">|</span>
@@ -100,28 +100,33 @@ layout: null
 
       <h2 class="title is-3">News</h2>
       <div class="content">
+        {% assign active_news = site.data.news | where_exp: "item", "item.archived != true" %}
+        {% assign archived_news = site.data.news | where_exp: "item", "item.archived == true" %}
         <ul>
-          {% for news in site.data.news %}
-          <li {% if forloop.index > 5 %}class="news-extra" style="display:none;"{% endif %}>
+          {% for news in active_news %}
+          <li>
+{{ news.date }}: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
+          </li>
+          {% endfor %}
+          {% for news in archived_news %}
+          <li class="news-extra" style="display:none;">
 {{ news.date }}: {{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}
           </li>
           {% endfor %}
         </ul>
-        {% if site.data.news.size > 5 %}
+        {% if archived_news.size > 0 %}
         <a class="news-toggle" onclick="toggleNews(this)" style="cursor:pointer; font-weight:500;">
-          &#9660; Show more
+          &#9660; Click to see old news
         </a>
         {% endif %}
       </div>
+    </div>
+  </section>
 
+  <section class="section" id="publications">
+    <div class="container is-max-desktop">
       <div class="hr"><hr></div>
-
-      <!-- <h2 class="title is-3" id="publications">Publications
-        <span class="publication-filter-btns">
-          <button class="button is-small" id="btn-selected" onclick="filterPublications('selected')">Selected</button>
-          <button class="button is-small" id="btn-all" onclick="filterPublications('all')">All</button>
-        </span>
-      </h2> -->
+      <h2 class="title is-3">Publications</h2>
 
       {% for publication in site.data.publications %}
       <div class="publication-block columns{% if publication.highlight %} publication-highlight{% endif %}" data-highlight="{{ publication.highlight }}">

@@ -1,0 +1,14 @@
+- name: University of Massachusetts Amherst
+  description: >-
+    Ph.D. in Computer Science, advised by Prof. Grant Van Horn.
+  dates: Fall 2024 - Present
+
+- name: University of Michigan, Ann Arbor
+  description: >-
+    M.S. in Robotics.
+  dates: Fall 2021 - Spring 2023
+
+- name: Zhejiang University
+  description: >-
+    B.Eng. in Robotics.
+  dates: Fall 2017 - Spring 2021
