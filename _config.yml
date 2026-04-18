@@ -1,12 +1,7 @@
 # Jekyll site configuration for wuao652.github.io
 #
-# This file is a staging scaffold introduced by the migration to the
-# Jekyll template (see docs/MIGRATION_PLAN.md, PR #2). The skeleton is
-# faithful to the upstream template; identity values below are
-# placeholders to be filled in during PR #5 (Personalization).
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you
-# run `bundle exec jekyll serve`. Restart the server after editing.
+# This file is *NOT* reloaded automatically when you run
+# `bundle exec jekyll serve`. Restart the server after editing.
 
 # Site identity
 title: Wuao Liu
@@ -38,12 +33,10 @@ plugins:
 sass:
   style: compact
 
-# Exclude the pre-migration files from the Jekyll build so they are not
-# copied into _site/. They are still served by GitHub Pages from the
-# branch root until PR #4 swaps the live site over to the template.
+# Files that should not be published to _site/.
+# The data/ directory is intentionally NOT excluded — it contains the
+# CV PDFs that index.html links to.
 exclude:
-  - stylesheet.css
-  - data/
   - docs/
   - README.md
   - CLAUDE.md
