@@ -28,6 +28,27 @@
     - subhransumaji
     - grantvanhorn
 
+- id: RealBirdID
+  title: "RealBirdID: Benchmarking Bird Species Identification in the Era of MLLMs"
+  venue: "CVPR, 2026"
+  description: "We introduce RealBirdID, a benchmark for fine-grained bird identification where models must either predict a species or abstain with an evidence-based rationale (for example, requiring vocalization, low-quality image, or occlusion)."
+  github: cvl-umass/RealBirdID
+  arxiv: "2603.27033"
+  image: rbid_github_preview.jpg
+  first_authors:
+    - loganlawrence
+  authors:
+    - mustafachasmai
+    - rangeldaroya
+    - wuaoliu
+    - seoyunjeong
+    - aaronsun
+    - maxhamilton
+    - fabiendelattre
+    - oindrilasaha
+    - subhransumaji
+    - grantvanhorn
+
 - id: LLMsGoalOriented
   title: "Can Large Language Models Reason About Goal-Oriented Tasks?"
   venue: "ACL Workshop, 2024"
