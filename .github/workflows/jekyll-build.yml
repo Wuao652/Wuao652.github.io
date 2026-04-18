@@ -1,0 +1,35 @@
+name: Jekyll Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for Gemfile
+        id: check
+        run: |
+          if [ -f Gemfile ]; then
+            echo "gemfile=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "gemfile=false" >> "$GITHUB_OUTPUT"
+            echo "No Gemfile found — skipping Jekyll build."
+          fi
+
+      - name: Setup Ruby
+        if: steps.check.outputs.gemfile == 'true'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        if: steps.check.outputs.gemfile == 'true'
+        run: bundle exec jekyll build
