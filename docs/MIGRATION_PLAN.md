@@ -4,11 +4,13 @@
 
 | PR | Title | Status |
 |----|-------|--------|
-| #1 | Infrastructure — docs + CI | 🔄 In progress |
-| #2 | Import Jekyll template skeleton | Not started |
-| #3 | Migrate content into `_data/` | Not started |
-| #4 | Switch over — new template goes live | Not started |
-| #5 | Personalization and cleanup | Not started |
+| #1 | Infrastructure — docs + CI | ✅ Merged (`d0574ae`) |
+| #2 | Import Jekyll template skeleton | ✅ Merged (`49657a3`) |
+| #3 | Migrate content into `_data/` | ✅ Merged (`8df7dfe`) |
+| #4 | Switch over — new template goes live | ✅ Merged (`36776b3`) |
+| #5 | Personalization and cleanup | ✅ Merged (`0343cfc`, partial — input-dependent items deferred) |
+
+> Retrospective and follow-ups: see [`MIGRATION_SUMMARY.md`](./MIGRATION_SUMMARY.md).
 
 ## Goal
 
