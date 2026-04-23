@@ -58,12 +58,17 @@ layout: null
 
 <body>
 
-  <nav class="navbar is-white is-fixed-top site-navbar" role="navigation">
+  <nav class="navbar is-white is-fixed-top site-navbar" role="navigation" aria-label="main navigation">
     <div class="container is-max-desktop">
       <div class="navbar-brand">
         <a class="navbar-item site-navbar-name" href="#">{{ site.name }}</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="siteNavMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="navbar-menu is-active">
+      <div id="siteNavMenu" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item" href="#news">News</a>
           <a class="navbar-item" href="#publications">Publications</a>

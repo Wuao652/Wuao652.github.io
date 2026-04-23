@@ -36,3 +36,27 @@ $(document).ready(function() {
     // filterPublications('selected');
     filterPublications('all');
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.navbar-burger').forEach(function (burger) {
+        burger.addEventListener('click', function () {
+            var target = document.getElementById(burger.dataset.target);
+            if (!target) return;
+            burger.classList.toggle('is-active');
+            target.classList.toggle('is-active');
+            burger.setAttribute('aria-expanded', burger.classList.contains('is-active'));
+        });
+    });
+
+    document.querySelectorAll('#siteNavMenu .navbar-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+            var menu = document.getElementById('siteNavMenu');
+            var burger = document.querySelector('.navbar-burger[data-target="siteNavMenu"]');
+            if (menu) menu.classList.remove('is-active');
+            if (burger) {
+                burger.classList.remove('is-active');
+                burger.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+});
