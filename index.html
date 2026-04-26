@@ -165,7 +165,7 @@ layout: null
               <source src="./images/{{ publication.image_mouseover }}" type="video/mp4">
             </video>
             {% else %}
-            <img alt="{{ publication.title }}" src="./images/{{ publication.image }}" loading="lazy" />
+            <img alt="{{ publication.title | replace: '<br>', ' ' | strip_html }}" src="./images/{{ publication.image }}" loading="lazy" />
             {% endif %}
           </div>
         </div>
