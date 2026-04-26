@@ -1,3 +1,12 @@
+- role: "GenAI Research Intern"
+  company: "LinkedIn"
+  company_url: "https://www.linkedin.com/"
+  logo: "images/LI-In-Bug.png"
+  dates: "May 2026 - Aug 2026"
+  mentors:
+    - name: "Jerry Shen"
+      url: "https://www.linkedin.com/in/jianqiangshen/"
+
 - role: "Research Scientist Intern"
   company: "Honda Research Institute"
   company_url: "https://usa.honda-ri.com/"
