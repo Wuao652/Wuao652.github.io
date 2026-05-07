@@ -14,8 +14,8 @@
     - grantvanhorn
 
 - id: AudioGeolocation
-  title: "Audio Geolocation: A Natural Sounds Benchmark"
-  venue: "Under Review, 2026"
+  title: "Bioacoustic Geolocation: Species Sounds as Geographic Signals"
+  venue: "ICML, 2026"
   description: "Using a vision-inspired approach, we tackle the novel challenge of predicting the geographic location of audio recordings by leveraging species sounds and multimodal retrieval techniques."
   project_page: "https://github.com/cvl-umass/nat-sound2loc-benchmark"
   github: cvl-umass/nat-sound2loc-code
