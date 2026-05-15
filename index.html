@@ -283,12 +283,21 @@ layout: null
               <span class="experience-dates">{{ exp.dates }}</span>
             </div>
             <div class="experience-desc">{{ exp.description | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-            {% if exp.mentors %}
+            {% if exp.mentors or exp.managers %}
             <div class="experience-mentors">
+              {% if exp.mentors %}
               Mentor:
               {% for mentor in exp.mentors %}
               <a href="{{ mentor.url }}" target="_blank">{{ mentor.name }}</a>{% unless forloop.last %},{% endunless %}
               {% endfor %}
+              {% endif %}
+              {% if exp.mentors and exp.managers %} &middot; {% endif %}
+              {% if exp.managers %}
+              Manager:
+              {% for manager in exp.managers %}
+              <a href="{{ manager.url }}" target="_blank">{{ manager.name }}</a>{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+              {% endif %}
             </div>
             {% endif %}
           </li>
