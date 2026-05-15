@@ -4,6 +4,11 @@
   logo: "images/LI-In-Bug.png"
   dates: "May 2026 - Aug 2026"
   mentors:
+    - name: "Yang Hu"
+      url: "https://www.linkedin.com/in/yanghu007/"
+  managers:
+    - name: "Xiaoqing Wang"
+      url: "https://www.linkedin.com/in/xiaoqing-wang-63812139/"
     - name: "Jerry Shen"
       url: "https://www.linkedin.com/in/jianqiangshen/"
 
