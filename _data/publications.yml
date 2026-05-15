@@ -2,9 +2,7 @@
   title: "Masked Autoencoders with Limited Data: Does It Work?<br>A Fine-Grained Bioacoustics Case Study"
   venue: "CVPR Workshop, 2026"
   description: "A systematic study of MAE pretraining for species classification on iNatSounds, analyzing the impacts of pretraining data scale, domain specificity, data curation, and transfer strategies."
-  project_page: "https://github.com/cvl-umass/nat-sound2loc-benchmark"
-  github: cvl-umass/nat-sound2loc-code
-  arxiv: "2505.18726"
+  arxiv: "2605.14031"
   image: inatsounds_mae.png
   first_authors:
     - wuaoliu
