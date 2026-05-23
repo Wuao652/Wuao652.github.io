@@ -17,6 +17,7 @@
   company: "Honda Research Institute"
   company_url: "https://usa.honda-ri.com/"
   logo: "images/honda-logo-only.png"
+  logo_height: 50
   dates: "May 2025 - Aug 2025"
   mentors:
     - name: "Nirav Savaliya"
