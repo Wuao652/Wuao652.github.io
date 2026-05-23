@@ -113,6 +113,13 @@ section.section {
         align-items: center;
         gap: 0.6rem;
         flex-wrap: wrap;
+
+        > a {
+            width: 120px;
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+        }
     }
 
     .experience-logo {
