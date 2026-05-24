@@ -113,6 +113,13 @@ section.section {
         align-items: center;
         gap: 0.6rem;
         flex-wrap: wrap;
+
+        > a {
+            width: 60px;
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+        }
     }
 
     .experience-logo {
@@ -121,10 +128,6 @@ section.section {
         object-fit: contain;
         border-radius: 4px;
         flex-shrink: 0;
-    }
-
-    .experience-logo[alt="LinkedIn"] {
-        height: 50px;
     }
 
     .experience-role {

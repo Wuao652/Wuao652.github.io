@@ -2,6 +2,7 @@
   company: "LinkedIn"
   company_url: "https://www.linkedin.com/"
   logo: "images/LI-In-Bug.png"
+  logo_height: 50
   dates: "May 2026 - Aug 2026"
   mentors:
     - name: "Yang Hu"
@@ -15,7 +16,8 @@
 - role: "Research Scientist Intern"
   company: "Honda Research Institute"
   company_url: "https://usa.honda-ri.com/"
-  logo: "images/honda-edited.png"
+  logo: "images/honda-logo-only.png"
+  logo_height: 50
   dates: "May 2025 - Aug 2025"
   mentors:
     - name: "Nirav Savaliya"

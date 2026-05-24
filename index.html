@@ -271,7 +271,8 @@ layout: null
               <div class="experience-title-block">
                 {% if exp.logo %}
                 <a href="{{ exp.company_url }}" target="_blank">
-                  <img src="./{{ exp.logo }}" alt="{{ exp.company }}" class="experience-logo" />
+                  <img src="./{{ exp.logo }}" alt="{{ exp.company }}" class="experience-logo"
+                    {% if exp.logo_height %}style="height: {{ exp.logo_height }}px"{% endif %} />
                 </a>
                 {% endif %}
                 <span>
