@@ -1,6 +1,8 @@
 - id: iNatSoundsMAE
   title: "Masked Autoencoders with Limited Data: Does It Work?<br>A Fine-Grained Bioacoustics Case Study"
-  venue: "CVPR Workshop, 2026"
+  venue: "Workshop on Fine-Grained Visual Categorization @ CVPR 2026"
+  awards:
+    - "Oral Talk (1/35)"
   description: "A systematic study of MAE pretraining for species classification on iNatSounds, analyzing the impacts of pretraining data scale, domain specificity, data curation, and transfer strategies."
   arxiv: "2605.14031"
   image: inatsounds_mae.png
@@ -13,7 +15,7 @@
 
 - id: AudioGeolocation
   title: "Bioacoustic Geolocation: Species Sounds as Geographic Signals"
-  venue: "ICML, 2026"
+  venue: "ICML 2026"
   description: "Using a vision-inspired approach, we tackle the novel challenge of predicting the geographic location of audio recordings by leveraging species sounds and multimodal retrieval techniques."
   project_page: "https://github.com/cvl-umass/nat-sound2loc-benchmark"
   github: cvl-umass/nat-sound2loc-code
@@ -28,7 +30,7 @@
 
 - id: RealBirdID
   title: "RealBirdID: Benchmarking Bird Species Identification in the Era of MLLMs"
-  venue: "CVPR, 2026"
+  venue: "CVPR 2026"
   description: "We introduce RealBirdID, a benchmark for fine-grained bird identification where models must either predict a species or abstain with an evidence-based rationale (for example, requiring vocalization, low-quality image, or occlusion)."
   github: cvl-umass/RealBirdID
   arxiv: "2603.27033"
@@ -49,7 +51,7 @@
 
 - id: LLMsGoalOriented
   title: "Can Large Language Models Reason About Goal-Oriented Tasks?"
-  venue: "ACL Workshop, 2024"
+  venue: "Workshop on the Scaling Behavior of Large Language Models @ ACL 2024"
   description: "We study how well LLMs can complete a sequence of steps to achieve a certain goal, such as making a sandwich or repairing a bicycle tire."
   project_page: "https://aclanthology.org/2024.scalellm-1.3/"
   open_access: "https://aclanthology.org/2024.scalellm-1.3.pdf"
