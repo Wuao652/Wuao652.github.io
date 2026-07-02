@@ -92,9 +92,10 @@ section.section {
     padding-left: 2.5rem;
 }
 
-.experience-list {
-    list-style: disc;
-    padding-left: 2.5rem;
+.content ul.experience-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 4.0rem;
 }
 
 .experience-item {
@@ -115,7 +116,7 @@ section.section {
         flex-wrap: wrap;
 
         > a {
-            width: 60px;
+            width: 80px;
             flex-shrink: 0;
             display: inline-flex;
             align-items: center;

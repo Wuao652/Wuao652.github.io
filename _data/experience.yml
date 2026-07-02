@@ -1,8 +1,8 @@
 - role: "GenAI Research Intern"
   company: "LinkedIn"
   company_url: "https://www.linkedin.com/"
-  logo: "images/LI-In-Bug.png"
-  logo_height: 50
+  logo: "images/LI-In-Bug-square.png"
+  logo_height: 80
   dates: "May 2026 - Aug 2026"
   mentors:
     - name: "Yang Hu"
@@ -10,17 +10,18 @@
   managers:
     - name: "Xiaoqing Wang"
       url: "https://www.linkedin.com/in/xiaoqing-wang-63812139/"
-    - name: "Jerry Shen"
-      url: "https://www.linkedin.com/in/jianqiangshen/"
+
 
 - role: "Research Scientist Intern"
   company: "Honda Research Institute"
   company_url: "https://usa.honda-ri.com/"
   logo: "images/honda-logo-only.png"
-  logo_height: 50
+  logo_height: 80
   dates: "May 2025 - Aug 2025"
   mentors:
-    - name: "Nirav Savaliya"
-      url: "https://www.linkedin.com/in/astronirav/"
     - name: "Goro Yeh"
       url: "https://www.linkedin.com/in/goroyeh56/"
+  managers:
+    - name: "Nirav Savaliya"
+      url: "https://astronirav.github.io/"
+
