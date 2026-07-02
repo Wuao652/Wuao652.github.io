@@ -43,7 +43,6 @@ sass:
 # The data/ directory is intentionally NOT excluded — it contains the
 # CV PDFs that index.html links to.
 exclude:
-  - docs/
   - README.md
   - CLAUDE.md
   - Gemfile

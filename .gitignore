@@ -1,6 +1,6 @@
 CLAUDE.md
 
-# Jekyll build artifacts (preemptive, for when Jekyll is added)
+# Jekyll build artifacts
 _site/
 .jekyll-cache/
 .jekyll-metadata
