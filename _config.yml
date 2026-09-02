@@ -45,6 +45,7 @@ sass:
 exclude:
   - README.md
   - CLAUDE.md
+  - AGENTS.md
   - Gemfile
   - Gemfile.lock
   - vendor/
