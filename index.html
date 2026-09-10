@@ -73,7 +73,7 @@ layout: null
           <a class="navbar-item" href="#news">News</a>
           <a class="navbar-item" href="#publications">Publications</a>
           <a class="navbar-item" href="#experience">Experience</a>
-          <a class="navbar-item" href="#services">Services</a>
+          <a class="navbar-item" href="#services">Service &amp; Teaching</a>
         </div>
       </div>
     </div>
@@ -311,20 +311,36 @@ layout: null
   <section class="section" id="services">
     <div class="container is-max-desktop">
       <div class="hr"><hr></div>
-      <h2 class="title is-3">Academic Services</h2>
-      <div class="content">
-        {% for item in site.data.services.teaching %}
-        <p>
-          <b>{{ item.role }}</b>:
-          {% for course in item.courses %}
-            <a href="{{ course.url }}" target="_blank">{{ course.name }}</a>{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        </p>
-        {% endfor %}
+      <h2 class="title is-3">Service &amp; Teaching</h2>
+      <dl class="service-list">
         {% for item in site.data.services.reviewing %}
-        <p><b>{{ item.type }}</b>: {{ item.venues }}</p>
+        <div class="service-row">
+          <dt>{{ item.type }}</dt>
+          <dd>
+            <ul class="service-entries service-venues">
+              {% for venue in item.venues %}
+              <li>{{ venue }}</li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </div>
         {% endfor %}
-      </div>
+        {% for item in site.data.services.teaching %}
+        <div class="service-row">
+          <dt>{{ item.role }}</dt>
+          <dd>
+            <ul class="service-entries">
+              {% for course in item.courses %}
+              <li class="service-course">
+                <span>{% if course.url %}<a href="{{ course.url }}" target="_blank" rel="noopener noreferrer">{{ course.name }}</a>{% else %}{{ course.name }}{% endif %}</span>
+                {% if course.term %}<span class="service-term">({{ course.term }})</span>{% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+          </dd>
+        </div>
+        {% endfor %}
+      </dl>
     </div>
   </section>
 
