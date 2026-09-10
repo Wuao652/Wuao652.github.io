@@ -1,7 +1,14 @@
-teaching: []
+teaching:
+  - role: "Teaching Assistant"
+    courses:
+      - name: "COMPSCI 682 Neural Networks: A Modern Introduction"
+        term: "Fall 2026"
 
 reviewing:
   - type: "Program Committee"
-    venues: "NECV 2025 (UMass Amherst)"
-  - type: "Reviewer"
-    venues: "International Journal of Computer Vision (IJCV)"
+    venues:
+      - "New England Computer Vision (NECV) Workshop 2025"
+  - type: "Journal Reviewer"
+    venues:
+      - "International Journal of Computer Vision (IJCV)"
+      - "Transactions on Machine Learning Research (TMLR)"
